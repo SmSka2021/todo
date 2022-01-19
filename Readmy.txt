@@ -1,1 +1,2 @@
-
+https://github.com/SmSka2021/todo
+to start: parcel index.html 
