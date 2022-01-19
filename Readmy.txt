@@ -1,4 +1,3 @@
-https://github.com/SmSka2021/todo
-to start: parcel index.html 
+https://smska2021.github.io/todo/
 in this branch tasks are saved in LocalStorage as innerHTML = string 
 in  branch master tasks are saved in LocalStorage as objects.
