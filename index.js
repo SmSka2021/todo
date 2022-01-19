@@ -125,7 +125,11 @@ createCalendar(calendar, year, monthNow);
 
 // ***TODO list***/
 let ul = document.querySelector("#list");
-let input = document.getElementById("toDoInput");
+let input = document.getElementById("toDoInput"); 
+let addBtn = document.getElementById("addBtn");
+input.addEventListener("keypress", validationPress);
+addBtn.addEventListener("click", validation);
+
 let items = JSON.parse(localStorage.getItem("ToDo")) || [];
 
 ////*генерация ID*////
@@ -141,8 +145,6 @@ function creatId() {
   }
 }
 
-input.addEventListener("keypress", validationPress);
-
 function validationPress(event) {
   if (event.keyCode == 13) {
     if (input.value === "" || input.value === null) {
@@ -152,6 +154,7 @@ function validationPress(event) {
     }
   }
 }
+
 function validation() {
   if (input.value === "" || input.value === null) {
     alert("Введите данные");
